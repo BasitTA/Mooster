@@ -9,10 +9,18 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var nextButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        roundedCorner()
+    }
+    
+    func roundedCorner(){
+        nextButton.layer.cornerRadius = 10
+        nextButton.layer.shadowColor = UIColor.black.cgColor
+        nextButton.layer.shadowOffset = CGSize(width: 3, height: 3)
+        nextButton.layer.shadowOpacity = 0.5
     }
 
 
