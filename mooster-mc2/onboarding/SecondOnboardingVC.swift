@@ -1,5 +1,5 @@
 //
-//  FirstOnboardingVC.swift
+//  SecondOnboardingVC.swift
 //  mooster-mc2
 //
 //  Created by Basit Tri Anggoro on 21/05/20.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FirstOnboardingVC: UIViewController {
+class SecondOnboardingVC: UIViewController {
     @IBOutlet weak var nextButton: UIButton!
     
     override func viewDidLoad() {
@@ -17,7 +17,22 @@ class FirstOnboardingVC: UIViewController {
         let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(self.swipeLeftGesture))
         swipeLeft.direction = UISwipeGestureRecognizer.Direction.left
         self.view.addGestureRecognizer(swipeLeft)
+        
+        
+        let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(self.swipeRightGesture))
+        swipeRight.direction = UISwipeGestureRecognizer.Direction.right
+        self.view.addGestureRecognizer(swipeRight)
         roundedCorner()
+        
+    }
+    
+    // Set the shouldAutorotate to False
+    override open var shouldAutorotate: Bool {
+       return false
+    }
+    // Specify the orientation.
+    override open var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+       return .portrait
     }
     
     func roundedCorner(){
@@ -29,7 +44,15 @@ class FirstOnboardingVC: UIViewController {
     
     @objc func swipeLeftGesture(){
         var vc: UIViewController
-        vc = (self.storyboard?.instantiateViewController(withIdentifier: "pageTwo"))!
+        vc = (self.storyboard?.instantiateViewController(withIdentifier: "pageThree"))!
+        vc.modalPresentationStyle = .fullScreen
+        vc.modalTransitionStyle = .crossDissolve
+        self.present(vc, animated: true, completion: nil)
+    }
+    
+    @objc func swipeRightGesture(){
+        var vc: UIViewController
+        vc = (self.storyboard?.instantiateViewController(withIdentifier: "pageOne"))!
         vc.modalPresentationStyle = .fullScreen
         vc.modalTransitionStyle = .crossDissolve
         self.present(vc, animated: true, completion: nil)
@@ -44,5 +67,5 @@ class FirstOnboardingVC: UIViewController {
         vc.modalTransitionStyle = .crossDissolve
         self.present(vc, animated: true, completion: nil)
     }
-    
+
 }

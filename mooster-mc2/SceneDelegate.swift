@@ -22,9 +22,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         var vc: UIViewController
         
         if isSecondTime {
-            
             vc = launcedStoryboard.instantiateViewController(identifier: "pageOne")
-//            vc = mainStoryboard.instantiateInitialViewController()!
+            vc = mainStoryboard.instantiateInitialViewController()!
         }else{
             vc = launcedStoryboard.instantiateViewController(identifier: "pageOne")
         }
