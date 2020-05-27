@@ -58,7 +58,7 @@
                                             <constraint firstAttribute="width" constant="130" id="BWc-Dc-mU2"/>
                                             <constraint firstAttribute="height" constant="130" id="HCk-fm-ylN"/>
                                         </constraints>
-                                        <state key="normal" title="Button" image="music"/>
+                                        <state key="normal" title="Button" image="Film-icon"/>
                                         <connections>
                                             <action selector="musicButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Eas-Z3-XWa"/>
                                         </connections>
@@ -79,7 +79,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.71783238650000003" green="0.85681957009999998" blue="0.74116241930000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="TwJ-7l-67v" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3P9-rZ-4Lb"/>
                             <constraint firstItem="TwJ-7l-67v" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="155" id="71N-nq-nDx"/>
@@ -125,7 +125,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="CgG-C0-l7x">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.71783238650000003" green="0.85681957009999998" blue="0.74116241930000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -138,8 +138,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Film-icon" width="512" height="512"/>
         <image name="games" width="536" height="536"/>
-        <image name="music" width="697" height="688"/>
         <image name="quotes" width="188" height="187"/>
     </resources>
 </document>

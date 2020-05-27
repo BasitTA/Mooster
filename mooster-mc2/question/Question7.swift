@@ -22,7 +22,6 @@ class Question7: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(selectedAct, pertanyaan1, pertanyaan2, pertanyaan3, pertanyaan4, pertanyaan5, pertanyaan6, pertanyaan7)
         roundedCorner()
     }
     
@@ -44,5 +43,20 @@ class Question7: UIViewController {
     @IBAction func ButtonSave(_ sender: Any) {
         pertanyaan7 = "save"
     }
-
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "7toResult" {
+            if let destination = segue.destination as? ResultVC {
+                destination.selectedAct = self.selectedAct
+//                destination.pertanyaan1 = self.pertanyaan1
+//                destination.pertanyaan2 = self.pertanyaan2
+                destination.pertanyaan3 = self.pertanyaan3
+                destination.pertanyaan4 = self.pertanyaan4
+//                destination.pertanyaan5 = self.pertanyaan5
+                destination.pertanyaan6 = self.pertanyaan6
+//                destination.pertanyaan7 = self.pertanyaan7
+              
+            }
+        }
+    }
 }

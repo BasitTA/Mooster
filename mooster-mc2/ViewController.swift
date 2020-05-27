@@ -16,12 +16,13 @@ class ViewController: UIViewController {
     @IBOutlet var imageBtn: [UIButton]!
     
     var buttonHighlighted:Bool = false
-    var favoriteAct:String = "games"
+    var selectedAct:String = "Games" //default value = games
     
     override func viewDidLoad() {
         super.viewDidLoad()
         roundedCorner()
     }
+    
     // Set the shouldAutorotate to False
     override open var shouldAutorotate: Bool {
        return false
@@ -33,12 +34,15 @@ class ViewController: UIViewController {
     }
     
     func roundedCorner(){
+        //rounded outlet collection & shadow
         for button in imageBtn{
             button.imageView?.layer.cornerRadius = 20
             button.layer.shadowColor = UIColor.black.cgColor
             button.layer.shadowOffset = CGSize(width: 3, height: 3)
             button.layer.shadowOpacity = 0.5
         }
+        
+        //rounded next button & shadow
         nextButton.layer.cornerRadius = 10
         nextButton.layer.shadowColor = UIColor.black.cgColor
         nextButton.layer.shadowOffset = CGSize(width: 3, height: 3)
@@ -46,7 +50,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func gamesBtnClicked(_ sender: UIButton) {
-        self.favoriteAct = "games"
+        selectedAct = "Games"
         DispatchQueue.main.async {
             if self.buttonHighlighted == false{
                 sender.isHighlighted = true
@@ -60,7 +64,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func musicButtonClicked(_ sender: UIButton) {
-        favoriteAct="music"
+        selectedAct = "Movie"
         DispatchQueue.main.async {
             if self.buttonHighlighted == false{
                 sender.isHighlighted = true
@@ -75,7 +79,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func quotesBtnClicked(_ sender: UIButton) {
-        favoriteAct="quotes"
+        selectedAct = "Book"
         DispatchQueue.main.async {
             if self.buttonHighlighted == false{
                 sender.isHighlighted = true
@@ -94,7 +98,7 @@ class ViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goToQuestion1VC"{
             let destinationVC = segue.destination as! Question1
-            destinationVC.selectedAct = favoriteAct
+            destinationVC.selectedAct = selectedAct
         }
     }
     

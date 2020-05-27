@@ -68,7 +68,7 @@
                                                     <constraint firstAttribute="height" constant="120" id="do0-y4-9cQ"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Between games, music, and reading quotes. Explore the possibility of a new activities from our recommendation" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cYR-7u-hxW">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Between games, film, and reading quotes. Explore the possibility of a new activities from our recommendation" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cYR-7u-hxW">
                                                 <rect key="frame" x="8" y="494" width="366" height="61"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="61" id="miV-FT-KzC"/>
@@ -86,7 +86,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="music" translatesAutoresizingMaskIntoConstraints="NO" id="a5t-a6-nZd" userLabel="kanan">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Film-icon" translatesAutoresizingMaskIntoConstraints="NO" id="a5t-a6-nZd" userLabel="kanan">
                                                 <rect key="frame" x="202" y="120" width="120" height="120"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="120" id="3eT-Qx-YPn"/>
@@ -94,7 +94,7 @@
                                                 </constraints>
                                             </imageView>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.71783238650000003" green="0.85681957009999998" blue="0.74116241930000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstItem="UWG-S4-DwA" firstAttribute="centerX" secondItem="F5u-sT-rS0" secondAttribute="centerX" id="1Ca-KE-KfN"/>
                                             <constraint firstItem="rwJ-0l-I3e" firstAttribute="leading" secondItem="F5u-sT-rS0" secondAttribute="leading" constant="63" id="1Tm-90-BaH">
@@ -170,7 +170,7 @@
                                 </constraints>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.72156862745098038" green="0.85490196078431369" blue="0.74901960784313726" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="efg-QM-nNp" firstAttribute="trailing" secondItem="3V4-I6-m8o" secondAttribute="trailing" constant="16" id="0MB-7Z-EOe"/>
                             <constraint firstItem="3V4-I6-m8o" firstAttribute="leading" secondItem="efg-QM-nNp" secondAttribute="leading" constant="16" id="7Nj-Fg-Ahj"/>
@@ -248,7 +248,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.71783238650000003" green="0.85681957009999998" blue="0.74116241930000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="Maj-uX-TIy" firstAttribute="centerX" secondItem="Sb2-kG-8Qs" secondAttribute="centerX" id="1Yr-rt-AzT"/>
                             <constraint firstItem="CeK-US-w78" firstAttribute="trailing" secondItem="weQ-EZ-q3T" secondAttribute="trailing" constant="32" id="1cc-En-J0n"/>
@@ -329,7 +329,7 @@
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.71783238650000003" green="0.85681957009999998" blue="0.74116241930000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="28f-l7-pzi" firstAttribute="centerX" secondItem="5bo-fg-uKE" secondAttribute="centerX" id="HTf-qP-Bkn"/>
                             <constraint firstItem="JDX-ng-pF0" firstAttribute="centerX" secondItem="5bo-fg-uKE" secondAttribute="centerX" id="Hll-cC-q7u"/>
@@ -355,8 +355,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Film-icon" width="512" height="512"/>
         <image name="games" width="536" height="536"/>
-        <image name="music" width="697" height="688"/>
         <image name="notification" width="741" height="741"/>
         <image name="quotes" width="188" height="187"/>
         <image name="timer" width="800" height="800"/>

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A544D90C24756E220017332A /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A544D90B24756E220017332A /* Onboarding.storyboard */; };
+		A54C2E0B247E6F53008DE88C /* ResultVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54C2E0A247E6F53008DE88C /* ResultVC.swift */; };
 		A553477624727B9400881F60 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A553477524727B9400881F60 /* AppDelegate.swift */; };
 		A553477824727B9400881F60 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A553477724727B9400881F60 /* SceneDelegate.swift */; };
 		A553477A24727B9400881F60 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A553477924727B9400881F60 /* ViewController.swift */; };
@@ -32,6 +33,7 @@
 		A544D90D2475F1350017332A /* FirstOnboardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstOnboardingVC.swift; sourceTree = "<group>"; };
 		A544D90F2475F15D0017332A /* SecondOnboardingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondOnboardingVC.swift; sourceTree = "<group>"; };
 		A544D9112475F1900017332A /* ThirdOnboardingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdOnboardingVC.swift; sourceTree = "<group>"; };
+		A54C2E0A247E6F53008DE88C /* ResultVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultVC.swift; sourceTree = "<group>"; };
 		A553477224727B9400881F60 /* mooster-mc2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mooster-mc2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A553477524727B9400881F60 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A553477724727B9400881F60 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				A553477524727B9400881F60 /* AppDelegate.swift */,
 				A553477724727B9400881F60 /* SceneDelegate.swift */,
 				A553477924727B9400881F60 /* ViewController.swift */,
+				A54C2E0A247E6F53008DE88C /* ResultVC.swift */,
 				A58F899F247BEB7600529990 /* onboarding */,
 				A58F89AD247D305B00529990 /* question */,
 				A544D90B24756E220017332A /* Onboarding.storyboard */,
@@ -203,6 +206,7 @@
 				A58F89B6247D308200529990 /* Question4.swift in Sources */,
 				A58F89BA247D308200529990 /* Question3.swift in Sources */,
 				A58F89B5247D308200529990 /* Question6.swift in Sources */,
+				A54C2E0B247E6F53008DE88C /* ResultVC.swift in Sources */,
 				A58F89B8247D308200529990 /* Question7.swift in Sources */,
 				A58F89BD247D8BFA00529990 /* SecondOnboardingVC.swift in Sources */,
 			);

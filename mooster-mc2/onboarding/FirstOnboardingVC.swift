@@ -13,8 +13,9 @@ class FirstOnboardingVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(self.swipeLeftGesture))
+        
+        //user swipe left, app run swipeLeftGesture function
         swipeLeft.direction = UISwipeGestureRecognizer.Direction.left
         self.view.addGestureRecognizer(swipeLeft)
         roundedCorner()
@@ -24,11 +25,13 @@ class FirstOnboardingVC: UIViewController {
     override open var shouldAutorotate: Bool {
        return false
     }
+    
     // Specify the orientation.
     override open var supportedInterfaceOrientations: UIInterfaceOrientationMask {
        return .portrait
     }
     
+    //rounded button & shadow
     func roundedCorner(){
         nextButton.layer.cornerRadius = 10
         nextButton.layer.shadowColor = UIColor.black.cgColor

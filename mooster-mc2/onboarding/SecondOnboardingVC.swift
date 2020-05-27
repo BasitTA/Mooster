@@ -22,8 +22,7 @@ class SecondOnboardingVC: UIViewController {
         let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(self.swipeRightGesture))
         swipeRight.direction = UISwipeGestureRecognizer.Direction.right
         self.view.addGestureRecognizer(swipeRight)
-        roundedCorner()
-        
+        roundedCorner()  
     }
     
     // Set the shouldAutorotate to False
